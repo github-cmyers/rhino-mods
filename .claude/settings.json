@@ -3,6 +3,27 @@
     "blender": {
       "command": "blender-mcp",
       "args": []
+    },
+    "replicate": {
+      "command": "uvx",
+      "args": ["mcp-server-replicate"],
+      "env": {
+        "REPLICATE_API_TOKEN": ""
+      }
+    },
+    "meshy": {
+      "command": "npx",
+      "args": ["-y", "meshy-ai-mcp-server"],
+      "env": {
+        "MESHY_API_KEY": ""
+      }
+    },
+    "tripo3d": {
+      "command": "npx",
+      "args": ["-y", "tripo-ai-mcp-server"],
+      "env": {
+        "TRIPO_API_SECRET": ""
+      }
     }
   }
 }
